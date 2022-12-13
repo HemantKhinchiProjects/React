@@ -5,7 +5,9 @@ const UpdatedComponent = (OriginalComponent) => {
     const increaseHandler = () => {
       setAmount(amount * 2);
     };
-    return <OriginalComponent />;
+    return (
+      <OriginalComponent amount={amount} increaseHandler={increaseHandler} /> 
+    );
   }
   return NewComponent;
 };
