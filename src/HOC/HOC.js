@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-const UpdatedComponent = (originalComponent) => {
+const UpdatedComponent = (OriginalComponent) => {
   function NewComponent() {
     const [amount, setAmount] = useState(10);
     const increaseHandler = () => {
       setAmount(amount * 2);
     };
-    return <originalComponent />;
+    return <OriginalComponent />;
   }
   return NewComponent;
 };
